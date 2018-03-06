@@ -1,34 +1,36 @@
 var firstName = document.getElementById('first-name')
 var lastName = document.getElementById('last-name')
-var emailInp = document.getElementById('email')
-var phoneInp = document.getElementById('tel')
-var desInp = document.getElementById('description')
-var raw = document.getElementById('rawID')
-var preview = document.getElementById('preview')
+var description = document.getElementById('description')
+var email = document.getElementById('email')
+var phone = document.getElementById('phone')
+var rawparagraph = document.getElementById('rawID')
 
-function updateprofile () {
-  var first = document.getElementById('live-update').innerHTML = firstName.value
+firstName.addEventListener('input', function () {
+  var first = firstName.value
+  var firstInput = document.getElementById('first1')
+  firstInput.innerHTML = first
+})
+
+lastName.addEventListener('input', function () {
   var last = lastName.value
-  var email = emailInp.value
-  var tel = phoneInp.value
-  var desc = desInp.value
-  var result = 'Hi, my name is' + first + last + 'If youre interested in a date, you can email me at' + email + 'or give me a call at' + tel
-  return result
-}
+  var lastInput = document.getElementById('last1')
+  lastInput.innerHTML = last
+})
 
-firstName.addEventListener('input', updateprofile())
+description.addEventListener('input', function () {
+  var desc = description.value
+  var descrInput = document.getElementById('descrip')
+  descrInput.innerHTML = desc
+})
 
-lastName.addEventListener('input', updateprofile())
+email.addEventListener('input', function () {
+  var email1 = email.value
+  var emailInput = document.getElementById('email1')
+  emailInput.innerHTML = email1
+})
 
-emailInp.addEventListener('input', updateprofile())
-
-phoneInp.addEventListener('input', updateprofile())
-
-phoneInp.addEventListener('input', updateprofile())
-
-document.getElementById('profile')
-
-function finalpreview () {
-  document.getElementById('first-name').innerHTML = firstName.value
-  document.getElementById('last1').innerHTML = lastName.value
-}
+phone.addEventListener('input', function () {
+  var phone1 = phone.value
+  var phoneInput = document.getElementById('phone1')
+  phoneInput.innerHTML = phone1
+})
