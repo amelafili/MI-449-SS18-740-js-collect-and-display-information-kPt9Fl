@@ -13,17 +13,13 @@
   </head>
   <body>
     <div class="container">
-
       <h1>Dating profile generator</h1>
-
       <p class="tagline">
         Create your own dating profile, that you fully own!
         Simply enter your personal information below and the HTML for your
         profile will start writing itself automatically.
       </p>
-
       <h2>Personal</h2>
-
       <div class="row">
         <div class="six columns">
           <label>First name</label>
@@ -35,11 +31,8 @@
         </div>
       </div>
       <label>Briefly describe yourself</label>
-
       <textarea id ="description" class="u-full-width"></textarea>
-
       <h2>Contact</h2>
-
       <div class="row">
         <div class="six columns">
           <label>Email</label>
@@ -51,21 +44,16 @@
         </div>
       </div>
     </div>
-
     <hr>
-
     <div class="container">
       <div class="row">
         <div class="six columns">
           <h2>Preview</h2>
           <div id="preview">
-            <h1>
               Hi, my name is
-            <div id="first1">FIRST_NAME</div>
-            <div id="last1">LAST_NAME!</div>
-            </h1>
+              <div id="first1">FIRST_NAME</div>
+              <div id="last1">LAST_NAME!</div>
             <p id ="descrip">DESCRIBE_YOURSELF_INFO</p>
-            <p>
               If you're interested in a date, you can email me at
               <div id="email1"><a href="mailto:EMAIL_ADDRESS" target="_blank">
                 EMAIL_ADDRESS
@@ -74,19 +62,17 @@
               <div id="phone1"><a href="tel:PHONE_NUMBER" target="_blank">
                 PHONE_NUMBER
               </a></div>
-            </p>
           </div>
         </div>
         <div class="six columns">
           <h2>Generated HTML</h2>
           <pre><code id="rawID">
-          <h1>Hi, my name is <div id="rawfirst">FIRST_NAME</div><div id="rawlast">LAST_NAME!</div></h1>
+            Hi, my name is <div id="rawfirst">FIRST_NAME</div><div id="rawlast">LAST_NAME!</div>
           <p id="rawdescr">DESCRIBE_YOURSELF_INFO</p>
-          <p>If you're interested in a date, you can email me at
+          If you're interested in a date, you can email me at
             <div id="rawemail"><a href="mailto:EMAIL_ADDRESS" target="_blank">EMAIL_ADDRESS</a></div>
             or give me a call at
             <div id="rawphone"><a href="tel:PHONE_NUMBER" target="_blank">PHONE_NUMBER</a></div>
-          </p>
           </code></pre>
         </div>
       </div>

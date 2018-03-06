@@ -1,73 +1,52 @@
 var firstName = document.getElementById('first-name')
 var lastName = document.getElementById('last-name')
-var description = document.getElementById('description')
-var email = document.getElementById('email')
-var phone = document.getElementById('phone')
-var rawParagraph = document.getElementById('rawID')
+var emailInput = document.getElementById('email')
+var phoneInput = document.getElementById('phone')
+var desInput = document.getElementById('description')
+var raw = document.getElementById('rawID')
+var preview = document.getElementById('preview')
 
-firstName.addEventListener('input', function () {
+var updateProfile = function () {
   var first = firstName.value
   var firstInput = document.getElementById('first1')
+  var firstInput1 = document.getElementById('rawfirst')
   firstInput.innerHTML = first
-})
-
-lastName.addEventListener('input', function () {
+  firstInput1.textContent = first
   var last = lastName.value
   var lastInput = document.getElementById('last1')
   lastInput.innerHTML = last
-})
+  var description = desInput.value
+  var descrip = document.getElementById('descrip')
+  var descrip2 = document.getElementById('rawdescr')
+  descrip.innerHTML = description
+  descrip2.textContent = description
+  var email = emailInput.value
+  var email1 = document.getElementById('email1')
+  var email2 = document.getElementById('rawemail')
+  email1.innerHTML = email
+  email2.textContent = email
+  var phone = phoneInput.value
+  var phone1 = document.getElementById('phone1')
+  var phone2 = document.getElementById('rawphone')
+  phone1.innerHTML = phone
+  phone2.textContent = phone
 
-description.addEventListener('input', function () {
-  var desc = description.value
-  var descrInput = document.getElementById('descrip')
-  descrInput.innerHTML = desc
-})
+  preview.innerHTML =
+  '<h1> Hi, my name is ' +
+  first + last +
+  description + '</h1><p>If youre interested in a date, you can email me at' +
+  email + 'or give me a call at</p>' +
+  phone
 
-email.addEventListener('input', function () {
-  var email1 = email.value
-  var emailInput = document.getElementById('email1')
-  emailInput.innerHTML = email1
-})
+  raw.textContent = '<h1> Hi, my name is' +
+  first + last + description +
+  'If youre interested in a date, you can email me at' +
+  email + 'or give me a call at </h1>' +
+  phone
+}
 
-phone.addEventListener('input', function () {
-  var phone1 = phone.value
-  var phoneInput = document.getElementById('phone1')
-  phoneInput.innerHTML = phone1
-})
-
-var rawfirstName = document.getElementById('first-name')
-var rawlastName = document.getElementById('last-name')
-var rawdescription = document.getElementById('description')
-var rawemail = document.getElementById('email')
-var rawphone = document.getElementById('phone')
-var rawParagraph = document.getElementById('rawID')
-
-rawfirstName.addEventListener('input', function () {
-  var first = firstName.value
-  var first1Input = document.getElementById('rawfirst')
-  first1Input.textContent = first
-})
-
-rawlastName.addEventListener('input', function () {
-  var last = lastName.value
-  var last1Input = document.getElementById('rawlast')
-  last1Input.textContent = last
-})
-
-rawdescription.addEventListener('input', function () {
-  var descr1 = description.value
-  var descr1Input = document.getElementById('rawdescr')
-  descr1Input.textContent = descr1
-})
-
-email.addEventListener('input', function () {
-  var email1 = email.value
-  var emailInput = document.getElementById('rawemail')
-  emailInput.textContent = email1
-})
-
-phone.addEventListener('input', function () {
-  var phone1 = phone.value
-  var phoneInput = document.getElementById('rawphone')
-  phoneInput.textContent = phone1
-})
+firstName.addEventListener('input', updateProfile)
+lastName.addEventListener('input', updateProfile)
+desInput.addEventListener('input', updateProfile)
+emailInput.addEventListener('input', updateProfile)
+phoneInput.addEventListener('input', updateProfile)
