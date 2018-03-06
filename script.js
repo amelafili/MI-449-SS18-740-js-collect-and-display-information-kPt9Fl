@@ -45,29 +45,29 @@ var rawParagraph = document.getElementById('rawID')
 rawfirstName.addEventListener('input', function () {
   var first = firstName.value
   var first1Input = document.getElementById('rawfirst')
-  first1Input.innerHTML = first
+  first1Input.textContent = first
 })
 
 rawlastName.addEventListener('input', function () {
   var last = lastName.value
   var last1Input = document.getElementById('rawlast')
-  last1Input.innerHTML = last
+  last1Input.textContent = last
 })
 
 rawdescription.addEventListener('input', function () {
   var descr1 = description.value
   var descr1Input = document.getElementById('rawdescr')
-  descr1Input.innerHTML = descr1
+  descr1Input.textContent = descr1
 })
 
 email.addEventListener('input', function () {
   var email1 = email.value
   var emailInput = document.getElementById('rawemail')
-  emailInput.innerHTML = email1
+  emailInput.textContent = email1
 })
 
 phone.addEventListener('input', function () {
   var phone1 = phone.value
   var phoneInput = document.getElementById('rawphone')
-  phoneInput.innerHTML = phone1
+  phoneInput.textContent = phone1
 })
