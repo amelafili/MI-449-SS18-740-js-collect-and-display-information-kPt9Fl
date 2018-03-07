@@ -17,9 +17,9 @@ function updateProfile () {
     first + ' ' + last + ' </h1>' +
   '<p>' + description + '</p>' +
   '<p> If you\'re interested in a date, you can email me at ' +
-  '<a href="mailto:' + email + '"target="_blank">' + email + '</a>' +
+  '<a href="mailto:' + email + '">' + email + '</a>' +
   ' or give me a call at ' +
-  '<a href="tel:phone">' + phone + '</a>' + '</p>'
+  '<a href="tel:' + phone + '">' + phone + '</a>' + '</p>'
   preview.innerHTML = paragraph
   raw.textContent = paragraph
 }
