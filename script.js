@@ -21,8 +21,9 @@ var updateProfile = function () {
   raw.textContent = '<h1>Hi, my name is ' +
     first + ' ' + last + ' </h1>' +
     '<p>' + description + '</p>' +
-    '<p> If you\'re interested in a date, you can email me at ' + email + ' or give me a call at ' +
-    phone + '</p>'
+    '<p> If you\'re interested in a date, you can email me at ' +
+    '<a href="mailto:email">' + email + '</a>' + ' or give me a call at ' +
+    '<a href="tel:phone">' + phone + '</a>' + '</p>'
 }
 
 firstName.addEventListener('input', updateProfile)
