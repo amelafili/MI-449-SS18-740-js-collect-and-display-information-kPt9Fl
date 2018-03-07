@@ -13,7 +13,7 @@ function updateProfile () {
   var email = emailInput.value
   var phone = phoneInput.value
   var paragraph =
-  '<h1>Hi, my name is ' +
+    '<h1>Hi, my name is ' +
     first + ' ' + last + ' </h1>' +
     '<p>' + description + '</p>' +
     '<p> If you\'re interested in a date, you can email me at ' +
